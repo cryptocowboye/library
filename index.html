@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Library</title>
+</head>
+<body>
+    <div class="library-container">
+        <div class="adding-container">
+            <h1>Welcome to the Library!</h1>
+            <button id="open-modal">Add Book</button>
+            <dialog>
+                <form>
+                    <p>
+                        <label for="author">Author: </label>
+                        <input type="text" id="author" class="book-field" required>
+                    </p>
+                    <p>
+                        <label for="title">Title: </label>
+                        <input type="text" id="title" class="book-field" required>
+                    </p>
+                    <p>
+                        <label for="num-of-pages">Number of pages: </label>
+                        <input type="number" id="num-of-pages" class="book-field" required>
+                    </p>
+                    <p>
+                        <input type="radio" id="read-book" name="read_state" class="book-radio" value="read" required>
+                        <label for="read-book">Read</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="not-read" name="read_state" class='book-radio' value="not read" required>
+                        <label for="not-read" name>Did not read</label>
+                    </p>
+                    <p>
+                        <button type="submit" id="submit-button">Submit</button>
+                    </p>
+                </form>
+                <button id="close-modal">Close Popup</button>
+            </dialog>
+        </div>
+        <div class="removing-container"></div>
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
