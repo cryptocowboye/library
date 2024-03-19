@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baskervville', sans-serif;
+}
+
+.library-container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100%;
+}
+
+.adding-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: red;
+    height: 475px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+#open-modal {
+    height: 50px;
+    width: 200px;
+    margin-top: 50px;
+}
+
+dialog[open] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 300px;
+    left: auto;
+    right: auto;
+    border: 2px solid black;
+}
+
+input#author, input#title, input#num-of-pages {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#close-modal {
+    width: 100px;
+    margin: 20px 0;
+    height: 35px;
+    border: 1px solid;
+    background-color: black;
+    color: white;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+dialog form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+}
+
+form > p {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    align-items: center;
+}
+
+button#submit-button {
+    padding: 5px 10px;
+}
+
+.removing-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 350px));
+    grid-auto-rows: minmax(225px, auto);
+    gap: 25px;
+    padding: 25px;
+    justify-content: center;
+}
+
+.removing-container > div {
+    display: grid;
+    grid-template-rows: 1fr 100px;
+    align-items: center;
+    justify-items: center;
+    background-color: #e3e3e3;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.span-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.span-style1 {
+    font-size: xxx-large;
+    overflow-wrap: anywhere;
+    text-align: center;
+}
+
+.span-style0, .span-style2 {
+    font-size: xx-large;
+    overflow-wrap: anywhere;
+    text-align: center;
+}
+
+.span-style3 {
+    font-size: x-large;
+    overflow-wrap: anywhere;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.toggle-buttons, .remove-buttons {
+    margin-bottom: 10px;
+    padding: 5px;
+}
