@@ -1,10 +1,12 @@
 const myLibrary = [] // The list where the objects are added
 
-function Book(author, title, pages, read) {
-    this.author = author
-    this.title = title // The objects being created
-    this.pages = pages
-    this.read = read
+class Book {
+    constructor(author, title, pages, read) {
+        this.author = author
+        this.title = title       // refactor for TOP
+        this.pages = pages
+        this.read = read
+    }
 }
 
 function pushToLibrary(pushAuthor, pushTitle, pushPages, pushRead) {
